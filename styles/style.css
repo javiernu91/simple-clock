@@ -1,0 +1,50 @@
+:root {
+  --main-background-color: rgba(162, 193, 230, 0.5);
+  --main-clock-color: rgba(221, 170, 170, 0.158);
+  --secondary-clock-color: rgb(0, 0, 0);
+
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--main-background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border-clock {
+  width: 250px;
+  height: 250px;
+  background-color: var(--main-clock-color);
+  border: solid 6px var(--secondary-clock-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.hours, .minuts, .seconds {
+  height: 10px;
+  background-color: var(--secondary-clock-color);
+  position: absolute;
+  top: 117px;
+  right: 122px;
+
+}
+
+.hours {
+  width: 70px;
+}
+.minuts {
+  width: 100px;
+  
+}
+.seconds {
+  width: 100px;
+}
