@@ -25,17 +25,19 @@ body {
   height: 250px;
   background-color: var(--main-clock-color);
   border: solid 6px var(--secondary-clock-color);
-  border-radius: 50%;
+  border-radius: 5%;
   position: relative;
 }
 
 .hours, .minuts, .seconds {
-  height: 10px;
+  height:8px;
   background-color: var(--secondary-clock-color);
   position: absolute;
   top: 117px;
   right: 122px;
-
+  border-radius: 5px;
+  transform-origin: 98%;
+  /* transform: rotate(90deg); */
 }
 
 .hours {
@@ -43,8 +45,10 @@ body {
 }
 .minuts {
   width: 100px;
+  height: 6px;
   
 }
 .seconds {
-  width: 100px;
+  width: 110px;
+  height: 4px;
 }
